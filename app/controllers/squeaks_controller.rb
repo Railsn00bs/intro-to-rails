@@ -1,0 +1,2 @@
+class SqueaksController < ApplicationController
+end

@@ -1,0 +1,27 @@
+
+Model
+
+ - User
+    have_many squeaks
+    email
+    name
+    age
+    timestamp
+
+ - Squeak
+    belong_to user
+    message
+    timestamp
+
+Controller
+
+  Pulling data out of the model and showing it to the user
+
+  Middleman
+
+View
+
+  What the user sees
+
+  HTML/CSS/data mixed in amongst that
+
