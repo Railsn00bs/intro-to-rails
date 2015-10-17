@@ -1,3 +1,5 @@
+Signed in as <%= current_user.email %>
+
 <%= form_for Squeak.new do |form| %>
   <%= form.label :message %>
   <%= form.text_field :message %>
@@ -7,7 +9,7 @@
 
 <ul>
   <% Squeak.all.each do |squeak| %>
-    <li><%= squeak.user.name %>: <%= squeak.message %></li>
+    <li><%= squeak.user.email %>: <%= squeak.message %></li>
   <% end %>
 </ul>
 
