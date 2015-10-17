@@ -1,0 +1,6 @@
+<ul>
+  <% Squeak.all.each do |squeak| %>
+    <li><%= squeak.user.name %>: <%= squeak.message %></li>
+  <% end %>
+</ul>
+
